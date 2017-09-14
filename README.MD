@@ -18,6 +18,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+//
 // Import angular-cropperjs
 import { AngularCropperjsModule } from 'angular-cropperjs';
 
