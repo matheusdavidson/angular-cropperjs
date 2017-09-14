@@ -2,23 +2,15 @@
 
 [CropperJS](https://fengyuanchen.github.io/cropperjs/) integration for Angular 2/4
  
-## Installation
+## How to use
 
-To install this library, run:
+1- Install the library:
 
 ```bash
 $ npm install angular-cropperjs --save
 ```
 
-## Consuming angular-cropperjs
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install angular-cropperjs
-```
-
-and then from your Angular `AppModule`:
+2 - Import `AngularCropperjsModule` in the module you want to use, for example `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -35,7 +27,8 @@ import { AngularCropperjsModule } from 'angular-cropperjs';
   ],
   imports: [
     BrowserModule,
-
+    
+    //
     // Load angular-cropperjs
     AngularCropperjsModule
   ],
@@ -45,7 +38,7 @@ import { AngularCropperjsModule } from 'angular-cropperjs';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+3 - Use the component in your template like this:
 
 ```html
 <!-- You can now use angular-cropper component in app.component.html -->
