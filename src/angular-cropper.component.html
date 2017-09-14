@@ -1,0 +1,17 @@
+<!-- ANGULAR CROPPER WRAPPER -->
+<div class="angular-cropper-wrapper">
+
+    <!-- LOADING -->
+    <div class="loading-block" *ngIf="isLoading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- LOAD ERROR -->
+    <div class="alert alert-warning" *ngIf="loadError">{{ loadImageErrorText }}</div>
+
+    <!-- CROPPER -->
+    <div class="cropper">
+        <img #image alt="image" [src]="imageUrl" (load)="imageLoaded($event)" crossorigin="anonymous" (error)="imageLoadError($event)"
+        />
+    </div>
+</div>
