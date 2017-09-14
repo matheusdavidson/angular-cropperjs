@@ -24,8 +24,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'angular-cropperjs';
+// Import angular-cropper
+import { AngularCropperModule } from 'angular-cropperjs';
 
 @NgModule({
   declarations: [
@@ -34,8 +34,8 @@ import { SampleModule } from 'angular-cropperjs';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    LibraryModule
+    // Load angular-cropper
+    AngularCropperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -46,11 +46,11 @@ export class AppModule { }
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
+<!-- You can now use angular-cropper component in app.component.html -->
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<angular-cropper [cropperOptions]="config" [imageUrl]="imageUrl"></angular-cropper>
 ```
 
 ## Development
