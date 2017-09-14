@@ -1,5 +1,6 @@
 {
   "name": "angular-cropperjs",
+  "description": "CropperJS integration for Angular 2/4",
   "version": "0.1.0",
   "repository": {
     "type": "git",
@@ -9,6 +10,11 @@
     "name": "Matheus Davidson",
     "email": "matheusdavidson@gmail.com"
   },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheusdavidson/angular-cropperjs/issues"
+  },
+  "homepage": "https://github.com/matheusdavidson/angular-cropperjs#readme",
   "keywords": [
     "angular",
     "angular2",
@@ -19,10 +25,6 @@
     "cropper",
     "image"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/matheusdavidson/angular-cropperjs/issues"
-  },
   "main": "angular-cropperjs.umd.js",
   "module": "angular-cropperjs.js",
   "jsnext:main": "angular-cropperjs.js",
