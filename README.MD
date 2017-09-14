@@ -24,8 +24,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import angular-cropper
-import { AngularCropperModule } from 'angular-cropperjs';
+// Import angular-cropperjs
+import { AngularCropperjsModule } from 'angular-cropperjs';
 
 @NgModule({
   declarations: [
@@ -34,8 +34,8 @@ import { AngularCropperModule } from 'angular-cropperjs';
   imports: [
     BrowserModule,
 
-    // Load angular-cropper
-    AngularCropperModule
+    // Load angular-cropperjs
+    AngularCropperjsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
