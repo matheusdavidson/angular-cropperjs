@@ -10,7 +10,7 @@
 $ npm install angular-cropperjs --save
 ```
 
-2- Import `AngularCropperjsModule` in the module you want to use, for example `AppModule`:
+2- Import and load `AngularCropperjsModule` in the module you want to use, for example `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
