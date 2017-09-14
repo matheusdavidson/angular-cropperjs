@@ -10,7 +10,14 @@
     "email": "matheusdavidson@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "angular2",
+    "angular4",
+    "angular-library",
+    "angular-component",
+    "cropperjs",
+    "cropper",
+    "image"
   ],
   "license": "MIT",
   "bugs": {
@@ -24,5 +31,11 @@
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
+  },
+  "dependencies": {
+    "cropperjs": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/cropperjs": "0.0.26"
   }
 }

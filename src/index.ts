@@ -1,24 +1,24 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AngularCropperComponent } from './angular-cropper.component';
+import { AngularCropperjsComponent } from './angular-cropperjs.component';
 
-export * from './angular-cropper.component';
+export * from './angular-cropperjs.component';
 
 @NgModule({
     imports: [
         CommonModule
     ],
     declarations: [
-        AngularCropperComponent
+        AngularCropperjsComponent
     ],
     exports: [
-        AngularCropperComponent
+        AngularCropperjsComponent
     ]
 })
-export class AngularCropperModule {
+export class AngularCropperjsModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: AngularCropperModule,
+            ngModule: AngularCropperjsModule,
             providers: []
         };
     }
