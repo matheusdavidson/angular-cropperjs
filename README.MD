@@ -10,7 +10,7 @@
 $ npm install angular-cropperjs --save
 ```
 
-2 - Import `AngularCropperjsModule` in the module you want to use, for example `AppModule`:
+2- Import `AngularCropperjsModule` in the module you want to use, for example `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -38,7 +38,7 @@ import { AngularCropperjsModule } from 'angular-cropperjs';
 export class AppModule { }
 ```
 
-3 - Use the component in your template like this:
+3- Use the component in your template like this:
 
 ```html
 <!-- You can now use angular-cropper component in app.component.html -->
