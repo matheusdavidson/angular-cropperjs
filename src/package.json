@@ -1,0 +1,28 @@
+{
+  "name": "angular-cropperjs",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matheusdavidson/angular-cropperjs"
+  },
+  "author": {
+    "name": "Matheus Davidson",
+    "email": "matheusdavidson@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheusdavidson/angular-cropperjs/issues"
+  },
+  "main": "angular-cropperjs.umd.js",
+  "module": "angular-cropperjs.js",
+  "jsnext:main": "angular-cropperjs.js",
+  "typings": "angular-cropperjs.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
