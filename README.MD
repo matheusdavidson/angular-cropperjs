@@ -45,11 +45,8 @@ export class AppModule { }
 
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
-```xml
+```html
 <!-- You can now use angular-cropper component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
 <angular-cropper [cropperOptions]="config" [imageUrl]="imageUrl"></angular-cropper>
 ```
 
