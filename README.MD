@@ -1,5 +1,7 @@
 # angular-cropperjs
 
+This is an integration of the [CropperJS](https://fengyuanchen.github.io/cropperjs/) library for Angular 2/4
+ 
 ## Installation
 
 To install this library, run:
