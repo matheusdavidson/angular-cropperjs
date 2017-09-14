@@ -10,7 +10,7 @@ To install this library, run:
 $ npm install angular-cropperjs --save
 ```
 
-## Consuming your library
+## Consuming angular-cropperjs
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
@@ -50,6 +50,37 @@ Once your library is imported, you can use its components, directives and pipes 
 ```html
 <!-- You can now use angular-cropper component in app.component.html -->
 <angular-cropper [cropperOptions]="config" [imageUrl]="imageUrl"></angular-cropper>
+```
+
+**Using CropperJS methods:**
+
+Use @ViewChild in your component to get the element:
+
+*In your app.component.html*
+```html
+<angular-cropper #angularCropper ..>
+```
+
+*And in your app.component.ts*
+```js
+
+//
+// Import AngularCropperjsComponent
+import { AngularCropperjsComponent } from 'angular-cropperjs';
+
+//
+// Get with @ViewChild
+@ViewChild('angularCropper') public angularCropper: AngularCropperjsComponent;
+```
+
+Then just call the CropperJS method you want:
+
+*anywhere in your app.component.ts*
+```js
+
+//
+// Lets try to zoom
+this.angularCropper.cropper.zoom(0.1);
 ```
 
 ## Development
