@@ -11,7 +11,7 @@
 
     <!-- CROPPER -->
     <div class="cropper">
-        <img #image alt="image" [src]="imageUrl" (load)="imageLoaded($event)" crossorigin="anonymous" (error)="imageLoadError($event)"
-        />
+        <img #image alt="image" [src]="imageUrl" (load)="imageLoaded($event)" [attr.crossorigin]="cropperConfig.checkCrossOrigin ? 'anonymous' : null"
+            (error)="imageLoadError($event)" />
     </div>
 </div>
