@@ -64,6 +64,7 @@ export class AngularCropperjsComponent {
     public cropper: Cropper;
     public imageElement: HTMLImageElement;
     public loadError: any;
+    lastImgSrc: string;
 
     /*--------  Controller  --------*/
 
@@ -129,7 +130,14 @@ export class AngularCropperjsComponent {
 
         //
         // Set cropperjs
-        this.cropper = new Cropper(image, this.cropperOptions);
+        if (this.cropper){
+            if (this.lastImgSrc !== image.src){
+                this.lastImgSrc = image.src;
+                this.cropper.replace(image.src);
+            }
+        }else{
+            this.cropper = new Cropper(image, this.cropperOptions);
+        }
     }
 
     /**
