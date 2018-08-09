@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build_lib": "ng build --prod angular-cropperjs"
+    "build_lib": "ng build --prod angular-cropperjs",
+    "npm_pack": "cd dist/angular-cropperjs && npm pack"
   },
   "private": true,
   "dependencies": {
