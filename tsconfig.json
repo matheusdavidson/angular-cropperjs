@@ -15,14 +15,6 @@
     "lib": [
       "es2017",
       "dom"
-    ],
-    "paths": {
-      "angular-cropperjs": [
-        "dist/angular-cropperjs"
-      ],
-      "angular-cropperjs/*": [
-        "dist/angular-cropperjs/*"
-      ]
-    }
+    ]
   }
 }
