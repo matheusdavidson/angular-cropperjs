@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularCropperjsComponent } from './angular-cropperjs.component';
+import { CropperComponent } from './cropper.component';
 
-describe('AngularCropperjsComponent', () => {
-  let component: AngularCropperjsComponent;
-  let fixture: ComponentFixture<AngularCropperjsComponent>;
+describe('CropperComponent', () => {
+  let component: CropperComponent;
+  let fixture: ComponentFixture<CropperComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AngularCropperjsComponent ]
+      declarations: [ CropperComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularCropperjsComponent);
+    fixture = TestBed.createComponent(CropperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

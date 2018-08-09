@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { AngularCropperjsComponent } from './angular-cropperjs.component';
+import { CropperComponent } from './cropper/cropper.component';
 
 @NgModule({
-  imports: [
-  ],
-  declarations: [AngularCropperjsComponent],
-  exports: [AngularCropperjsComponent]
+    imports: [
+    ],
+    declarations: [CropperComponent],
+    exports: [CropperComponent]
 })
 export class AngularCropperjsModule { }
