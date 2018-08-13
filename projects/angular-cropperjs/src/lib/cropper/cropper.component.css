@@ -4,15 +4,16 @@
 
 .cropper img {
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
+    height: auto;
 }
 
-.angular-cropper-wrapper {
+.cropper-wrapper {
     position: relative;
     min-height: 80px
 }
 
-.angular-cropper-wrapper .loading-block {
+.cropper-wrapper .loading-block {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +21,7 @@
     height: 100%
 }
 
-.angular-cropper-wrapper .loading-block .spinner {
+.cropper-wrapper .loading-block .spinner {
     width: 31px;
     height: 31px;
     margin: 0 auto;
