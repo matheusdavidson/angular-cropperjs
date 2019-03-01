@@ -1,7 +1,7 @@
 # angular-cropperjs
 
 [CropperJS](https://fengyuanchen.github.io/cropperjs/) integration for Angular +6
- 
+
 ## How to use
 
 1- Install the library:
@@ -23,20 +23,18 @@ import { AppComponent } from './app.component';
 import { AngularCropperjsModule } from 'angular-cropperjs';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    
-    //
-    // Load angular-cropperjs
-    AngularCropperjsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+
+        //
+        // Load angular-cropperjs
+        AngularCropperjsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 3- Use the component in your template like this:
@@ -50,28 +48,30 @@ export class AppModule { }
 
 Use @ViewChild in your component to get the element:
 
-*In your app.component.html*
+_In your app.component.html_
+
 ```html
-<angular-cropper #angularCropper ..>
+<angular-cropper #angularCropper ..></angular-cropper>
 ```
 
-*And in your app.component.ts*
+_And in your app.component.ts_
+
 ```js
 
 //
-// Import AngularCropperjsComponent
-import { AngularCropperjsComponent } from 'angular-cropperjs';
+// Import CropperComponent
+import { CropperComponent } from 'angular-cropperjs';
 
 //
 // Get with @ViewChild
-@ViewChild('angularCropper') public angularCropper: AngularCropperjsComponent;
+@ViewChild('angularCropper') public angularCropper: CropperComponent;
 ```
 
 Then just call the CropperJS method you want:
 
-*anywhere in your app.component.ts*
-```js
+_anywhere in your app.component.ts_
 
+```js
 //
 // Lets try to zoom
 this.angularCropper.cropper.zoom(0.1);
@@ -104,7 +104,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
 
 ## License
 
