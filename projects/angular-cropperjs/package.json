@@ -14,6 +14,10 @@
     "angular",
     "angular2",
     "angular4",
+    "angular5",
+    "angular6",
+    "angular7",
+    "angular8",
     "angular-library",
     "angular-component",
     "cropperjs",
@@ -25,8 +29,8 @@
     "url": "https://github.com/matheusdavidson/angular-cropperjs/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/common": "8.1.2",
+    "@angular/core": "8.1.2",
     "cropperjs": "^1.4.1"
   }
 }
