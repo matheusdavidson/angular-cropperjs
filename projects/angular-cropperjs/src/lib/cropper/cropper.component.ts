@@ -59,7 +59,6 @@ export class CropperComponent implements OnInit {
 
         //
         // Add crossOrigin?
-        console.log('this.cropperOptions', this.cropperOptions);
         if (this.cropperOptions.checkCrossOrigin) image.crossOrigin = 'anonymous';
 
         //
