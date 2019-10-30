@@ -19,7 +19,7 @@ export interface ImageCropperResult {
     styleUrls: ['./cropper.component.css'],
     encapsulation: ViewEncapsulation.None
 })
-export class CropperComponent implements OnInit {
+export class CropperComponent implements OnInit, OnDestroy {
 
     @ViewChild('image') image: ElementRef;
 
@@ -40,6 +40,13 @@ export class CropperComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+    }
+    
+    ngOnDestroy() {
+      if(!!this.cropper) {
+        this.cropper.destroy();
+        this.cropper = null;
+      }
     }
 
     /**
