@@ -22,13 +22,14 @@ export interface ImageCropperResult {
 }
 
 @Component({
-    selector: "alliance-cropper",
-    templateUrl: "./cropper.component.html",
-    styleUrls: ["./cropper.component.css"],
+    selector: 'angular-cropper',
+    templateUrl: './cropper.component.html',
+    styleUrls: ['./cropper.component.css'],
     encapsulation: ViewEncapsulation.None
 })
-export class AllianceCropperComponent {
-    @ViewChild("image") image: ElementRef;
+export class CropperComponent {
+
+    @ViewChild('image') image: ElementRef;
 
     @Input() imageUrl: any;
     @Input() settings: ImageCropperSetting;
