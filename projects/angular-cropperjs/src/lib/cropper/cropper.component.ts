@@ -104,6 +104,10 @@ export class CropperComponent implements OnInit {
 
         //
         // Set cropperjs
+        if (this.cropper) {
+            this.cropper.destroy();
+            this.cropper = undefined;
+        }
         this.cropper = new Cropper(image, this.cropperOptions);
     }
 
