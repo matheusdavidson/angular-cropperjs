@@ -43,7 +43,7 @@ export class CropperComponent implements OnInit, OnDestroy {
     }
     
     ngOnDestroy() {
-      if(!!this.cropper) {
+      if(this.cropper) {
         this.cropper.destroy();
         this.cropper = null;
       }
