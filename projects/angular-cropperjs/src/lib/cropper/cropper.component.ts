@@ -21,7 +21,7 @@ export interface ImageCropperResult {
 })
 export class CropperComponent implements OnInit, OnDestroy {
 
-    @ViewChild('image') image: ElementRef;
+    @ViewChild('image', { static: true }) image: ElementRef;
 
     @Input() imageUrl: any;
     @Input() settings: ImageCropperSetting;
