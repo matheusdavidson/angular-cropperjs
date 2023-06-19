@@ -110,10 +110,6 @@ export class CropperComponent implements OnInit, OnDestroy {
         this.cropperOptions = {
             ...{
                 aspectRatio,
-                movable: false,
-                scalable: false,
-                zoomable: false,
-                viewMode: 1,
                 checkCrossOrigin: true,
             },
             ...this.cropperOptions,
