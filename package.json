@@ -1,7 +1,7 @@
 {
   "name": "angular-cropperjs-app",
   "description": "CropperJS integration for Angular +6",
-  "version": "8.0.0",
+  "version": "13.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/matheusdavidson/angular-cropperjs"
@@ -35,7 +35,7 @@
     "release:minor": "cd ./scripts && npm run release:minor",
     "release:patch": "cd ./scripts && npm run release:patch",
     "build:dev": "ng build angular-cropperjs",
-    "build:prod": "ng build angular-cropperjs --configuration production"
+    "build:prod": "ng build angular-cropperjs --configuration production && cp README.md dist/angular-cropperjs/README.md && cp LICENSE dist/angular-cropperjs/LICENSE"
   },
   "private": true,
   "dependencies": {

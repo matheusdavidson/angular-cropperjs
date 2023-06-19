@@ -1,35 +1,35 @@
 {
-    "name": "angular-cropperjs",
-    "description": "CropperJS integration for Angular +6",
-    "version": "8.0.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/matheusdavidson/angular-cropperjs"
-    },
-    "author": {
-        "name": "Matheus Davidson",
-        "email": "matheusdavidson@gmail.com"
-    },
-    "keywords": [
-        "angular",
-        "angular2",
-        "angular4",
-        "angular-library",
-        "angular-component",
-        "cropperjs",
-        "cropper",
-        "image"
-    ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/matheusdavidson/angular-cropperjs/issues"
-    },
-    "dependencies": {
-      "tslib": "^2.0.0"
-    },
-    "peerDependencies": {
-        "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-        "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
-        "cropperjs": "^1.4.1"
-    }
+	"name": "angular-cropperjs",
+	"description": "CropperJS integration for Angular +6",
+	"version": "13.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/matheusdavidson/angular-cropperjs"
+	},
+	"author": {
+		"name": "Matheus Davidson",
+		"email": "matheusdavidson@gmail.com"
+	},
+	"keywords": [
+		"angular",
+		"angular2",
+		"angular4",
+		"angular-library",
+		"angular-component",
+		"cropperjs",
+		"cropper",
+		"image"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/matheusdavidson/angular-cropperjs/issues"
+	},
+	"dependencies": {
+		"tslib": "^2.0.0"
+	},
+	"peerDependencies": {
+		"@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+		"@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+		"cropperjs": "^1.4.1"
+	}
 }
