@@ -1,13 +1,13 @@
 import * as fs from "fs";
 import * as shell from "shelljs";
-import { VERSION } from "version";
+import { VERSION } from "../version";
 
 let newVersion = "";
 export type SemanticTarget = "major" | "minor" | "patch";
 
 export function bumpVersionFile(version) {
     fs.writeFile(
-        `version.ts`,
+        `../version.ts`,
         `export const VERSION = '${version}';`,
         function (err) {
             if (err) {
@@ -20,31 +20,59 @@ export function bumpVersionFile(version) {
 }
 
 export function bumpLibPackageFile(version) {
-    fs.writeFile(
+    //
+    // Read lib package.json
+    fs.readFile(
         `../projects/angular-cropperjs/package.json`,
-        JSON.stringify(version, null, "\t"),
-        function (err) {
-            if (err) {
-                console.log(err);
-                process.exit(1);
-            }
-            console.log(`Lib package updated`);
+        "utf8",
+        function (err, contents) {
+            //
+            // Parse json
+            const pkg = JSON.parse(contents);
+            // update version
+            pkg.version = version;
+
+            //
+            // Write package.json
+            fs.writeFile(
+                `../projects/angular-cropperjs/package.json`,
+                JSON.stringify(pkg, null, "\t"),
+                function (err) {
+                    if (err) {
+                        console.log(err);
+                        process.exit(1);
+                    }
+                    console.log(`Frontoose main package updated`);
+                }
+            );
         }
     );
 }
 
 export function bumpMainPackageFile(version) {
-    fs.writeFile(
-        `../package.json`,
-        JSON.stringify(version, null, "\t"),
-        function (err) {
-            if (err) {
-                console.log(err);
-                process.exit(1);
+    //
+    // Read package.json
+    fs.readFile(`../package.json`, "utf8", function (err, contents) {
+        //
+        // Parse json
+        const pkg = JSON.parse(contents);
+        // update version
+        pkg.version = version;
+
+        //
+        // Write package.json
+        fs.writeFile(
+            `../package.json`,
+            JSON.stringify(pkg, null, "\t"),
+            function (err) {
+                if (err) {
+                    console.log(err);
+                    process.exit(1);
+                }
+                console.log(`Frontoose main package updated`);
             }
-            console.log(`Main package updated`);
-        }
-    );
+        );
+    });
 }
 
 export function bumpNumber(num: string, target: SemanticTarget) {
