@@ -1,0 +1,41 @@
+{
+    "name": "scripts",
+    "version": "0.0.5",
+    "description": "scripts used for build and release routine",
+    "scripts": {
+        "bump": "tsc && node ./.compiled/scripts/bump.js",
+        "bump:major": "tsc && node ./.compiled/scripts/bump-major.js",
+        "bump:minor": "tsc && node ./.compiled/scripts/bump-minor.js",
+        "bump:patch": "tsc && node ./.compiled/scripts/bump-patch.js",
+        "git:tag": "tsc && node ./.compiled/scripts/git-tag.js",
+        "build:dev": "ng build angular-cropperjs",
+        "build:prod": "ng build angular-cropperjs --prod",
+        "deploy:git": "./deploy-git.sh",
+        "deploy:npm": "tsc && node ./.compiled/scripts/deploy-npm.js",
+        "changelog": "cd ../ && conventional-changelog -p angular -i CHANGELOG.md -s",
+        "release:major": "./release-major.sh",
+        "release:minor": "./release-minor.sh",
+        "release:patch": "./release-patch.sh",
+        "tada": "tsc && node ./.compiled/scripts/tada.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.7.4",
+        "@babel/core": "^7.7.4",
+        "@babel/plugin-proposal-class-properties": "^7.7.4",
+        "@babel/preset-env": "^7.7.4",
+        "@babel/preset-typescript": "^7.7.4",
+        "conventional-changelog-cli": "^2.0.28",
+        "dmd": "^4.0.5",
+        "dox": "^0.9.0",
+        "jsdoc-babel": "^0.5.0",
+        "jsdoc-to-markdown": "^5.0.3",
+        "typedoc": "^0.15.3",
+        "typedoc-plugin-markdown": "^2.2.11",
+        "typescript": "^3.7.3"
+    },
+    "dependencies": {
+        "decomment": "^0.9.2"
+    }
+}

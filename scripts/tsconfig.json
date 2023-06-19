@@ -1,0 +1,13 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "../",
+        "outDir": "./.compiled",
+        "sourceMap": false,
+        "types": ["node"],
+        "target": "es2017",
+        "module": "commonjs"
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["./src/test-setup.ts", "**/stub.ts", "**/*.spec.ts"]
+}
