@@ -15,11 +15,11 @@ export class AppComponent {
     }
 
     goDown() {
-        this.cropperElement.cropper.move(0, 1);
+        this.cropperElement.cropper.move(0, 10);
     }
 
     goUp() {
-        this.cropperElement.cropper.move(0, -1);
+        this.cropperElement.cropper.move(0, -10);
     }
 
     goRight() {
