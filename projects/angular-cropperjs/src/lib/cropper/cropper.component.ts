@@ -107,8 +107,8 @@ export class CropperComponent implements OnInit, OnDestroy {
         //
         // Set crop options
         // extend default with custom config
-        this.cropperOptions = Object.assign(
-            {
+        this.cropperOptions = {
+            ...{
                 aspectRatio,
                 movable: false,
                 scalable: false,
@@ -116,8 +116,8 @@ export class CropperComponent implements OnInit, OnDestroy {
                 viewMode: 1,
                 checkCrossOrigin: true,
             },
-            this.cropperOptions
-        );
+            ...this.cropperOptions,
+        };
 
         //
         // Set cropperjs
@@ -171,8 +171,8 @@ export class CropperComponent implements OnInit, OnDestroy {
 
         //
         // Emit export data when promise is ready
-        promise.then((res) => {
-            this.export.emit(Object.assign(data, res));
+        promise.then((res: any) => {
+            this.export.emit({ ...data, ...res });
         });
     }
 }
