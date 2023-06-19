@@ -1,9 +1,85 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Welcome to {{ title }}!
-    </h1>
-    <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<mat-toolbar>
+    <div class="container">
+        Angular Cropper JS
+    </div>
+</mat-toolbar>
+
+<div class="bg-blue-700 text-blue-50">
+    <div class="container py-10 flex">
+        <div>
+            <div class="font-medium text-4xl">Cropper.js</div>
+            <div class="pt-2 text-lg">JavaScript image cropper with Angular powers</div>
+        </div>
+
+        <div></div>
+    </div>
 </div>
-<h2>Example</h2>
-<angular-cropper [cropperOptions]="{ checkCrossOrigin: true }" [imageUrl]="'https://fengyuanchen.github.io/cropperjs/images/picture.jpg'"></angular-cropper>
+
+<div class="container flex gap-10 pt-10">
+    <div class="flex-1 flex flex-col gap-4">
+        <angular-cropper
+            #cropper
+            [imageUrl]="'https://fengyuanchen.github.io/cropperjs/images/picture.jpg'"
+        ></angular-cropper>
+
+        <!--CROPPER CONTROLS-->
+        <div class="flex flex-wrap justify-center items-center gap-2">
+            <button
+                mat-button
+                (click)="zoomIn()"
+                class="mat-icon-button"
+            >
+                <mat-icon>zoom_in</mat-icon>
+            </button>
+
+            <button
+                mat-button
+                (click)="zoomOut()"
+                class="mat-icon-button"
+            >
+                <mat-icon>zoom_out</mat-icon>
+            </button>
+
+            <button
+                mat-button
+                (click)="goLeft()"
+                class="mat-icon-button"
+            >
+                <mat-icon>keyboard_arrow_left</mat-icon>
+            </button>
+
+            <button
+                mat-button
+                (click)="goRight()"
+                class="mat-icon-button"
+            >
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+
+            <button
+                mat-button
+                (click)="goUp()"
+                class="mat-icon-button"
+            >
+                <mat-icon>keyboard_arrow_up</mat-icon>
+            </button>
+
+            <button
+                mat-button
+                (click)="goDown()"
+                class="mat-icon-button"
+            >
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </button>
+
+            <button
+                mat-button
+                (click)="reset()"
+                class="mat-icon-button mat-primary"
+            >
+                <mat-icon>cached</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
