@@ -143,6 +143,5 @@
         }
       }
     }
-  },
-  "defaultProject": "angular-cropperjs-app"
+  }
 }
